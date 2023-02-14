@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.809);
+}
+
+.master-cont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+.logo-container {
+    background-image: url(images/edward-xu-D8nVq3Bv6qY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+   
+}
+
+.logo {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    bottom: 40%;
+    background-color: rgba(15, 15, 15, 0.693);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading-cont, .form-cont, .footer-cont {
+   display: flex;
+   justify-content: start;
+   padding: 25px;
+}
+
+.right-cont {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    justify-content: space-around;
+    
+}
