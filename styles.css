@@ -18,35 +18,75 @@ body {
     background-image: url(images/edward-xu-D8nVq3Bv6qY-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    width: 50vw;
+    width: 40vw;
     height: 100vh;
     position: relative;
-   
 }
 
 .logo {
     position: absolute;
-    top: 35%;
+    top: 20%;
     left: 0;
     right: 0;
-    bottom: 40%;
+    bottom: 60%;
     background-color: rgba(15, 15, 15, 0.693);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.heading-cont, .form-cont, .footer-cont {
-   display: flex;
-   justify-content: start;
-   padding: 25px;
+  .form-cont, .footer-cont {
+   display: flex; 
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start; 
+   padding-left: 25px;
+   flex: 1;
+   flex-wrap: wrap;
+}
+
+.form-cont {
+    background-color: rgb(115, 40, 18);
+    padding-bottom: 25px;
+}
+
+.heading-cont {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.heading-item {
+    width: 100%;
+}
+
+.heading-cont:nth-child(1) {
+    margin-top: 35px;
+    padding-right: 70px;
 }
 
 .right-cont {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 60vw;
     height: 100vh;
     justify-content: space-around;
+}
+
+input {
+    display: block;
+    width: 300px;
+}
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+    text-align: start;
+    max-width: 100vw;
     
 }
